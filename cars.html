@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="icon" type="image/x-icon" href="./img/logo.png">
+	<title>AutoHub</title>
+</head>
+<body>
+	<!-- Telegram button -->
+	<div class="rounded-circle position-fixed btn_telegram d-flex justify-content-center">
+		<a id="telegram" href="https://t.me/web_aitu" class="text-decoration-none align-self-center">
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-telegram" viewBox="0 0 16 16">
+				<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+			</svg>
+		</a>
+	</div>
+
+	<!-- Header -->
+	<header>
+		<nav class="navbar fixed-top navbar-dark color4">
+			<div class="container-xl">
+				<div class="d-flex align-items-center">
+					<a class="navbar-brand d-inline-block" href="./index.html">
+						<img src="./img/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+					</a>
+					<a class="btn btn-dark d-xl-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+						☰
+					</a>
+					<a class="navbar-brand d-none d-xl-inline mx-5" href="./cars.html">Cars</a>
+					<a class="navbar-brand d-none d-xl-inline me-5" href="./service.html">Service</a>
+					<a class="navbar-brand d-none d-xl-inline" href="./about_us.html">About us</a>
+				</div>
+				<h2 id="title">AutoHub</h2>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Main offcanvas -->
+	<div class="offcanvas offcanvas-end color4 text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<h2 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h2>
+			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="./index.html" class="d-block">Main</a></li>
+					<li class="list-group-item"><a href="./cars.html" class="d-block">Cars</a></li>
+					<li class="list-group-item"><a href="./service.html" class="d-block">Service</a></li>
+					<li class="list-group-item"><a href="./about_us.html" class="d-block">About us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<main id="cars">
+		<div class="container-xxl">
+			<div class="space"></div>
+			<div class="my-5">
+				<div id="brands" class="btn-group d-sm-block d-flex flex-column">
+					<a id="all_brands" class="btn btn-primary active">All brands</a>
+					<a id="bmw" class="btn btn-primary">BMW</a>
+					<a id="toyota" class="btn btn-primary">Toyota</a>
+					<a id="mercedes" class="btn btn-primary">Mercedes</a>
+					<a id="audi" class="btn btn-primary">Audi</a>
+					<a id="porshe" class="btn btn-primary">Porshe</a>
+					<a id="lexus" class="btn btn-primary">Lexus</a>
+				</div>
+			</div>
+			<div class="row text-white text-center">
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="bmw">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/bmw_x6.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>BMW X6</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>Frozen Grey Metallic</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>3 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>306 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>four-wheel drive</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>73 900$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>BMW X6</b></p>
+						<p>73 900$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="toyota">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/camry_75.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Camry 75</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>sedan</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>white</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>2.5 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>200 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>37 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Camry 75</b></p>
+						<p>37 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="mercedes">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/e200.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Mercedes e-200</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>sedan</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>2 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>600 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>four-wheel drive</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>90 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Mercedes e-200</b></p>
+						<p>90 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="toyota">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/land_cruiser.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Land cruiser prado</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>suv</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>4 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>330 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>four-wheel drive</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>95 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Land cruiser prado</b></p>
+						<p>95 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="toyota">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/corolla.jpeg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Corolla</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>sedan</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>white</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>1.6 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>125 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>30 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Toyota corolla</b></p>
+						<p>30 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="toyota">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/rav4.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>rav4</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>2 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>200 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>43 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Toyota rav4</b></p>
+						<p>43 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="mercedes">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/s500.jpeg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>s-500</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>sedan</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>white</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>3 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>800 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>160 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Mercedes s-500</b></p>
+						<p>160 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="mercedes">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/eqs.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>EQS</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>suv</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>3 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>650 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>electrical</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>260 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Mercedes EQS</b></p>
+						<p>260 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="mercedes">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/glb200.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>GLB-200</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>1.3 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>190 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>75 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Mercedes GLB-200</b></p>
+						<p>75 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="audi">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/q5.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Q5</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>red</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>2 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>370 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>electrical</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>80 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Audi Q5</b></p>
+						<p>80 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="audi">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/q7.jpeg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Q7</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>brown</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>3 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>500 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>130 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Audi Q7</b></p>
+						<p>130 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="porshe">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/panamera.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Panamera</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>universal</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>grey</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>2.9 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>300 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>electrical</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>190 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Porshe panamera</b></p>
+						<p>190 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="lexus">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/lx570.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>LX570</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>suv</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>5.7 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>400 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>260 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>Lexus LX570</b></p>
+						<p>260 000$</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-5" brand="bmw">
+					<div class="card_box color3 p-2 rounded">
+						<img src="./img/cars/x7.jpg" alt="car" class="img-fluid rounded car_photo">
+						<div class="overlay rounded">
+							<div class="text">
+								<table class="table table-dark table-striped">
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>X7</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>type</th>
+											<td>crossover</td>
+										</tr>
+										<tr>
+											<th>color</th>
+											<td>black</td>
+										</tr>
+										<tr>
+											<th>engine capacity</th>
+											<td>4.4 L</td>
+										</tr>
+										<tr>
+											<th>power</th>
+											<td>530 hp</td>
+										</tr>
+										<tr>
+											<th>fuel type</th>
+											<td>gasoline</td>
+										</tr>
+										<tr>
+											<th>drive type</th>
+											<td>front</td>
+										</tr>
+										<tr>
+											<th>price</th>
+											<td>210 000$</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<p class="mt-4"><b>BMW X7</b></p>
+						<p>210 000$</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</main>
+	
+	<!-- JavaScript -->
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// radio 
+			$("#all_brands").click(function(){
+				$("div[brand]").css("display","block");
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+			})
+			$("#bmw").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='bmw']").css("display","block");
+			})
+			$("#toyota").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='toyota']").css("display","block");
+			})
+			$("#mercedes").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='mercedes']").css("display","block");
+			})
+			$("#audi").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='audi']").css("display","block");
+			})
+			$("#porshe").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='porshe']").css("display","block");
+			})
+			$("#lexus").click(function(){
+				$("#brands a").removeClass("active");
+				$(this).addClass("active");
+				$("div[brand]").css("display","none");
+				$("div[brand='lexus']").css("display","block");
+			})
+			// telegram
+			$("#telegram").mouseover(function(){
+				$(this).parent().css("transform","scale("+1.3+")")
+			})
+			$("#telegram").mouseout(function(){
+				$(this).parent().css("transform","scale("+1+")")
+			})
+		});
+	</script>
+
+	<!-- Footer -->
+	<footer class="color4">
+		<div class="container-md">
+			<div class="row text-light pt-5">
+				<div class="col-md-6">
+					<p>The Republic of Kazakhstan, Astana city 020000, Mangilik El Avenue, С1, Astana IT University</p>
+					<p>Email: <a href="mailto:ainolhuawei@gmail.com" class="link-light">ainolhuawei@gmail.com</a></p>
+					<p>Phone number: <a href="tel: +7(777) 333 22 11" class="link-light">+7(777) 333 22 11</a></p>
+					<p>Sultan Kudaybergenov (IT-2202)</p>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1022.3462839327568!2d71.41657513605813!3d51.09050886751545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2skz!4v1695892198400!5m2!1sru!2skz" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<p class="text-center">&copy; 2023 All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
